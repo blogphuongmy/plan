@@ -83,12 +83,12 @@
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-md-4" v-for="(day, i) in days">
+            <div class="col-md-4" v-for="(ngày, i) in days">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" :data-src="`holder.js/100px225?text=Ngày ${i+1}&size=33&theme=sky`" height="225" width="100%">
                 <div class="card-body">
                   <p class="card-text text-center" v-if="!edit_mode">{{day}}</p>
-                  <input type="text" class="form-control" :value="day" v-if="edit_mode" v-on:change="saveDay(i, event.target.value)" required>
+                  <input type="text" class="form-control" :value="ngày" v-if="edit_mode" v-on:change="saveDay(i, event.target.value)" required>
                 </div>
               </div>
             </div>
