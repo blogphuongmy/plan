@@ -85,7 +85,7 @@
           <div class="row">
             <div class="col-md-4" v-for="(Day, i) in days">
               <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" :data-src="`holder.js/100px225?text=Ngày ${i+1}&size=33&theme=sky`" height="225" width="100%">
+                <img class="card-img-top" :data-src="`holder.js/100px225?text=Ngày ${i+1}&size=30&theme=sky`" height="225" width="100%">
                 <div class="card-body">
                   <p class="card-text text-center" v-if="!edit_mode">{{day}}</p>
                   <input type="text" class="form-control" :value="Day" v-if="edit_mode" v-on:change="saveDay(i, event.target.value)" required>
