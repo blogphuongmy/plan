@@ -2,7 +2,7 @@
     new Vue({
         el: "#juno_okyo",
         data: {
-            days: 'Gặp khách hàng;Ký hợp đồng;Họp"'.split(";"),
+            days: 'Gặp khách hàng;Ký hợp đồng;Họp'.split(";"),
             loading: {
                 state: !1,
                 btn: ""
